@@ -30,16 +30,15 @@ function menedzFunk() {
 		izvade.style.color = 'red'; // mainam rezultata lauka krasu
 	}
 }
-
-//  Funkcija vērtību konvertesanai
 /////////////////////////////////////////////////////////
+//  Funkcija vērtību konvertesanai
 function convertNum(num, to) {
 	const parsedNum = parseInt(num, 10); // String -> Integer
 	if (!isNaN(parsedNum)) {
 		const convertedNum = parsedNum.toString(to); // Skaitlis tu numura sistema izveleto numuru
-		return [convertedNum, true];
+		return [convertedNum, true]; // viss ir pareizi
 	} else {
-		return ['Nepareizi dati.', false];
+		return ['Nepareizi dati.', false]; // kaut kas ir nepareizi
 	}
 }
 /////////////////////////////////////////////////////////
